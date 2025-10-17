@@ -1,7 +1,5 @@
-// personnalisons la police latin
-import {Inter,Lusitana} from 'next/font/google'
-export const interFont=Inter({subsets:['greek']})
-export const lusitana=Lusitana({subsets:['latin'],weight:['400','700']})
+
+
 
 
 import Image from "next/image";
@@ -44,7 +42,7 @@ export const metadata = {
 
 export default function Page() {
   return(
-    <div className= {`${interFont.className} antialiased   bg-green-800 space-y-3  md:flex  md:items-center md:h-screen h-[100%] md:justify-around  px-6 py-9`}>
+    <div className= {`bg-green-800 space-y-3  md:flex  md:items-center md:h-screen h-[100%] md:justify-around  px-6 py-9`}>
       <div className="text-white  w-[100%] md:w-[50%]">
         <Image className="h-[200px] p-0  w-80   object-cover" src="/white-logo.png"  width={100} height={760} alt="introuvable"/>
         <div className="space-y-3 w-[100%]">

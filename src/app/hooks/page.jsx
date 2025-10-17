@@ -6,41 +6,41 @@ import { useState } from "react"
 
 
 // gestion de l'icone
-export const metada={
-    title:"nouvelle inspiration",
-    description:"soyez inspirer et dynamique",
-    icons: {
-    icon: "/favicon.ico", // or '/icon.png'
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
+// export const metadata={
+//     title:"nouvelle inspiration",
+//     description:"soyez inspirer et dynamique",
+//     icons: {
+//     icon: "/favicon.ico", // or '/icon.png'
+//     shortcut: "/favicon.ico",
+//     apple: "/favicon.ico",
+//   },
 
-  openGraph: {
-    title: "Welcome to Inkspire",
-    description: "Unleash Your Creativity with Inkspire and create your next blog article",
-    url: "https://www.inkspire.com", // your real domain here
-    siteName: "Inkspire",
-    images: [
-      {
-        url: "/og-image.jpg", // your preview image in /public
-        width: 1200,
-        height: 630,
-        alt: "Inkspire — Unleash Your Creativity",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+//   openGraph: {
+//     title: "Welcome to Inkspire",
+//     description: "Unleash Your Creativity with Inkspire and create your next blog article",
+//     url: "https://www.inkspire.com", // your real domain here
+//     siteName: "Inkspire",
+//     images: [
+//       {
+//         url: "/og-image.jpg", // your preview image in /public
+//         width: 1200,
+//         height: 630,
+//         alt: "Inkspire — Unleash Your Creativity",
+//       },
+//     ],
+//     locale: "en_US",
+//     type: "website",
+//   },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "Welcome to Inkspire",
-    description: "Unleash Your Creativity with Inkspire and create your next blog article",
-    images: ["/og-image.jpg"],
-    creator: "@InkspireOfficial", // optional
-  },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Welcome to Inkspire",
+//     description: "Unleash Your Creativity with Inkspire and create your next blog article",
+//     images: ["/og-image.jpg"],
+//     creator: "@InkspireOfficial", // optional
+//   },
 
-}
+// }
 
 
 
