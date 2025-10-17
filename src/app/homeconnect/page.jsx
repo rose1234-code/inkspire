@@ -11,7 +11,7 @@ const Page = () => {
         //getting user data from the local storage || check if user exist
         const userConnect = JSON.parse(localStorage.getItem('user'))
         if (!userConnect || !userConnect.firstName) {
-            router.replace('/show') // redirect client-side
+            router.replace('/formulaire') // redirect client-side
         } else {
             setUser(userConnect)
         }
@@ -21,7 +21,7 @@ const Page = () => {
     // logout a user 
     const handleLogout =()=>{
         localStorage.removeItem('user')
-        router.replace('/show')
+        router.replace('/formulaire')
     }
 
     if (!user) {
