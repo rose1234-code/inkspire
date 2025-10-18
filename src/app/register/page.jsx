@@ -41,7 +41,7 @@ const page = () => {
         <div className='w-1/2 p-3 h-[500px]'>
           <Image src="/logo.png" width={100} height={760} />  
           <h2 className='text-2xl font-semibold mb-6'>Join Us</h2>
-          <form className='space-y-4'>
+          <form className='space-y-3'>
             <div>
               <label className='block text-sm font-medium mb-1' htmlFor='email'>FirstName</label>
               <input type='text' onChange={(e)=>setFirstName(e.target.value)}  id='name' className='w-full border border-gray-300 p-2 rounded' />
@@ -60,10 +60,10 @@ const page = () => {
             </div>
             <button type='button'  onClick={()=>handleRegister()}  className='w-full bg-emerald-800 text-white p-2 rounded hover:bg-emerald-700 transition'>Register</button>
           </form>
-          <Link href={login} className=" border p-2 text-center">se connecte</Link>
+          <Link href={login} className=" text-[12px] mt-2 py -2 text-center">avez-vous deja un compte? <span className='underline text-blue-500'>se connecter!</span></Link>
         </div>
          <div className='w-1/2 bg-emerald-800 h-[550px] flex items-center justify-center'>
-            <Image className=' rounded  w-full h-full object-cover' src="/portrait.jpg" alt='introuvable' height={100} width={760}/>
+            <Image className=' rounded  w-full h-full object-cover' src="/couple.jpg" alt='introuvable' height={100} width={760}/>
         </div>
        </div>
     </div>

@@ -12,10 +12,11 @@ const page = () => {
     const [email,setEmail]=React.useState("")
     const [password,setPassword]=React.useState(null)
 
-    const GetName=()=>{
-        if(email.includes("@")){
-            let firstName=setEmail(email.split('@')[0])
+    const GetName = () => {
+        if (email.includes("@")) {
+            return email.split('@')[0]
         }
+        return email
     }
     const Payload={
         firstName :GetName(), 
@@ -30,7 +31,7 @@ const page = () => {
         // send the Payload to the localStorage
         localStorage.setItem("user" , JSON.stringify(Payload))
         toast.success("Register Succefully!")
-        redirect('/homeconnect')
+        redirect('/loginhome')
     }
   return (
     <div className='h-screen overflow-hidden w-full flex items-center justify-center'>
@@ -53,9 +54,9 @@ const page = () => {
                     <label className='block text-sm font-medium mb-1' htmlFor='password'>Password</label>
                     <input type='password' onChange={(e)=>setPassword(e.target.value)} id='password' className='w-full border border-gray-300 p-2 rounded outline-none' />
                     </div>
-                    <button type='submit' onClick={()=>handleLogin()} className='w-full bg-emerald-800 text-white p-2 rounded hover:bg-emerald-700 transition'>Login</button>
+                    <button type='button' onClick={()=>handleLogin()} className='w-full bg-emerald-800 text-white p-2 rounded hover:bg-emerald-700 transition'>Login</button>
                 </form>
-                <Link href={register}>creer un compte</Link>
+                <Link href={register} className='text-[12px]  mt-2'>n'avez-vous pas compte?  <span className='text-blue-500 underline'>creer un compte!</span> </Link>
             </div>   
        </div>
     </div>

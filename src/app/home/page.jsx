@@ -16,11 +16,13 @@ const Page = () => {
       setUser(userGotten)
     }
   }, [router])
+
   // logout a user 
-   const handleLogout =()=>{
+  const handleLogout =()=>{
     localStorage.removeItem('user')
     router.replace('/login')
-   }
+  }
+  
   if (!user) {
     // Optional loading screen before redirect
     return (
