@@ -36,7 +36,7 @@ const Page = () => {
 
     return (
         <div className="h-screen w-full bg-emerald-700 text-white text-5xl flex flex-col items-center justify-center">
-            <h1>Welcome {user.firstName}</h1>
+            <h1 className='text-[40px] text-center'>Welcome {user.firstName}</h1>
             <button onClick={()=>handleLogout()} className="my-5 text-2xl cursor-pointer bg-black text-white p-2 rounded  transition">SignOut</button>
         </div>
     )

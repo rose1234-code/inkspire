@@ -36,9 +36,9 @@ const page = () => {
   return (
     <div className='h-screen overflow-hidden w-full flex items-center justify-center'>
         <ToastContainer position='top-center'/>
-      <div className='flex h-[550px] w-[900px] shadow-md bg-white'>
+      <div className='flex h-[550px] w-[900px] shadow-md bg-white md:flex md:items-center md:justify-center'>
        
-        <div className='w-1/2 p-3 h-[500px]'>
+        <div className='md:w-1/2 w-full p-3 h-[500px]'>
           <Image src="/logo.png" width={100} height={760} />  
           <h2 className='text-2xl font-semibold mb-6'>Join Us</h2>
           <form className='space-y-3'>
@@ -62,8 +62,8 @@ const page = () => {
           </form>
           <Link href={login} className=" text-[12px] mt-2 py -2 text-center">avez-vous deja un compte? <span className='underline text-blue-500'>se connecter!</span></Link>
         </div>
-         <div className='w-1/2 bg-emerald-800 h-[550px] flex items-center justify-center'>
-            <Image className=' rounded  w-full h-full object-cover' src="/couple.jpg" alt='introuvable' height={100} width={760}/>
+        <div className='hidden  w-1/2 bg-emerald-800 h-[550px] md:flex items-center justify-center'>
+          <Image className=' rounded  w-full h-full object-cover' src="/couple.jpg" alt='introuvable' height={100} width={760}/>
         </div>
        </div>
     </div>

@@ -36,14 +36,14 @@ const page = () => {
   return (
     <div className='h-screen overflow-hidden w-full flex items-center justify-center'>
             <ToastContainer position='top-center'/>
-        <div className='flex h-[500px] w-[900px] shadow-md bg-white'>
+        <div className='flex h-[500px] w-[900px] md:w-full shadow-md bg-white'>
 
-            <div className='w-1/2 h-[500px] rounded bg-emerald-800 flex items-center justify-center'>
-                <Image className=' rounded  w-full h-full object-cover' src="/portrait.jpg" alt='introuvable' height={100} width={760}/>
+            <div className='hidden w-1/2 h-[500px] rounded bg-emerald-800 md:flex items-center justify-center'>
+                <Image className=' rounded  w-full h-full object-cover ' src="/portrait.jpg" alt='introuvable' width={860}  height={800} />
             </div>
        
-            <div className='w-1/2 h-[500px] shadow-gray-300 flex flex-col p-8 justify-center'>
-                <Image src="/logo.png" width={200} height={760} alt="rose"/>
+            <div className='w-full md:w-1/2  h-[500px] shadow-gray-300 flex flex-col p-8 justify-center'>
+                <Image className='border' src="/logo.png" width={200} height={760} alt="rose"/>
                 <h2 className='text-2xl font-semibold mb-6'>Login to Your Account</h2>
                 <form className='space-y-4'>
                     <div>
@@ -56,7 +56,7 @@ const page = () => {
                     </div>
                     <button type='button' onClick={()=>handleLogin()} className='w-full bg-emerald-800 text-white p-2 rounded hover:bg-emerald-700 transition'>Login</button>
                 </form>
-                <Link href={register} className='text-[12px]  mt-2'>n'avez-vous pas compte?  <span className='text-blue-500 underline'>creer un compte!</span> </Link>
+                <Link href={register} className='text-[12px]  mt-2'>n'avez-vous pas un compte?  <span className='text-blue-500 underline'>creer un compte!</span> </Link>
             </div>   
        </div>
     </div>
