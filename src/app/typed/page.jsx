@@ -9,7 +9,7 @@ export default function TypedText() {
   useEffect(() => {
     typedInstance.current = new Typed(typedRef.current, {
       strings: [
-        'Lorem 👋ipsum dolor sit amet consectetu repudiandae veritatis illo odio animi. Iste dolor ipsum atque fuga.⌨️'
+        'Loreipsum dolor sit amet consectetu repudiandae veritatis illo odio animi. Iste dolor ipsum atque fuga.'
       ],
       typeSpeed: 80,      // vitesse de frappe
       backSpeed: 0,       // pas de suppression

@@ -43,10 +43,10 @@ export default function Page() {
     <div className= {` bg-green-800 md:space-y-4  md:flex  md:items-center md:h-screen h-[100%] md:justify-around  px-6 py-9`}>
       <div className="text-white  w-[100%] md:w-[50%]">
         <div className="">
-          <Image className="h-[380px] px-0 w-80  object-cover" src="/white-logo.png"  width={850} height={1200} alt="introuvable"/>
+          <Image className="hidden md:block h-[380px] px-0 w-80  object-cover" src="/white-logo.png"  width={850} height={1200} alt="introuvable"/>
         </div>
         <div className="space-y-3 w-[100%]">
-          <h1 className="md:text-[36px]  text-[25px] font-bold">Wel<span className="text-pink-500">come  to</span> InkSpire</h1>
+          <h1 className="md:text-[36px]  text-[31px] font-bold">Wel<span className="text-pink-500">come  to</span> InkSpire</h1>
           <p   className="text-[16px] md:text-[17px]"> <TypedText/> </p>
           <div className="gap-3">
             <button className=" rounded shadow mr-3.5 text-black px-4 py-2  bg-white">Start writing</button>
@@ -54,7 +54,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="border  h-[410px] w-[100%] md:w-[30%] md:h-screen ">
+      <div className="mt-5 md:mt-0  h-[410px] w-[100%] md:w-[30%] md:h-screen ">
         <Image  className="object-cover h-full w-full" src="/girl.jpg" alt="introuvable" height={990} width={820} />
       </div>
     </div>
